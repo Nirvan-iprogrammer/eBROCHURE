@@ -5,6 +5,7 @@ import frame from "../../assets/Frame 811779.png";
 import logo from "../../assets/image 15.png";
 import "./Welcome.css";
 import mainImage from "../../assets/Section.png";
+import microSoftLogo from "../../assets/logos_microsoft-icon.png"
 
 const Welcome = () => {
   return (
@@ -37,7 +38,7 @@ const Welcome = () => {
         <button className="welcome-button">
           <div className="d-flex align-items-center justify-content-center gap-2 w-100 h-100">
             <img
-              src="https://dashboard.codeparrot.ai/api/image/Z-0oEQz4-w8v6R_z/logos-mi.png"
+              src={microSoftLogo}
               alt="Microsoft"
               className="welcome-ms-logo"
             />

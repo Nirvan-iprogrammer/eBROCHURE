@@ -1,6 +1,7 @@
 import React from 'react';
 import framewhite from "../assets/Frame 811779 (1).png";
-import hamburger from "../assets/Hamburguer menu.png";
+import hamburgerClose from "../assets/Hamburguer menu.png";
+import hamburgerOpen from "../assets/Hamburguer menu (1).png";
 
 const Sidebar = ({ isCollapsed, toggleSidebar }) => {
   const navItemStyle = {
@@ -52,7 +53,7 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
         padding: '16px',
         textAlign: 'left'
       }}>
-        {isCollapsed ?  <img src={framewhite} alt="" style={{ width: '45px' , height:"46px"}} /> :  <img src={hamburger} alt="" style={{ width: '45px' , height:"46px"}} />}
+        {isCollapsed && (<img src={hamburgerOpen} alt="" style={{ width: '45px' , height:"46px"}} /> )}
       </button>
 
       {/* Nav Header */}
@@ -72,7 +73,11 @@ const Sidebar = ({ isCollapsed, toggleSidebar }) => {
               <img src={framewhite} alt="" style={{ width: '45px' , height:"46px"}} />
             </div>
             <span style={logoTextStyle}>DnA</span>
-              
+            <div>
+            <button onClick={toggleSidebar} style={{background: 'none', border: 'none', color: '#f2f4f7', cursor: 'pointer', padding: '16px',textAlign: 'left'}}>
+            {! isCollapsed &&  (<img src={hamburgerClose} alt="" style={{ width: '45px' , height:"46px"}} />)}
+            </button>
+              </div>
           </div>
         </div>
       </div>
