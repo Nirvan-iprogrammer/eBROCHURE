@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Welcome from './Components/Welcome';
+import Welcome from './Components/WelcomePage/Welcome';
+import Layout from './Components/Layout';
 
 
 
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Welcome />} />
-    
+        <Route path='/layout' element={<Layout />} />
       </Routes>
     </Router>
   )

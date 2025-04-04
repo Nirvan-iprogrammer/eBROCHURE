@@ -1,0 +1,85 @@
+.welcome-container {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .welcome-left {
+    width: 60%;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  .welcome-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  .welcome-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 4rem;
+  }
+  
+  .welcome-top-box {
+    margin-bottom: 1rem;
+    width: 400px;
+  }
+  
+  .welcome-dna-box {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0.5rem;
+    gap: 1rem;
+    height: 58px;
+  }
+  
+  .welcome-dna-img {
+    height: 45px;
+    width: 46px;
+  }
+  
+  .welcome-dna-logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffc107;
+  }
+  
+  .welcome-logo-img {
+    width: 102.46px;
+    height: 58px;
+  }
+  
+  .welcome-button {
+    background-color: #1c1c1c;
+    border: 1px solid #7f56d9;
+    border-radius: 8px;
+    width: 400px;
+    height: 44px;
+    padding: 0;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .welcome-button-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  
+  .welcome-ms-logo {
+    width: 24px;
+    height: 23px;
+  }
